@@ -79,11 +79,11 @@
       - name: Docker Desktop
         path: "/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/"
         pos: 13
-      - name: Mission Control
-        path: "/Applications/Mission Control.app/"
-        pos: 14
       - name: Launchpad
         path: "/Applications/Launchpad.app/"
+        pos: 14
+      - name: Mission Control
+        path: "/Applications/Mission Control.app/"
         pos: 15
 
     dotfiles_repo: "git@github.com:karia/dot-files.git"
