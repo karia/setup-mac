@@ -1,0 +1,109 @@
+- hosts: localhost
+  connection: local
+  become_user: hisamatsuyoshiyuki
+  gather_facts: yes
+
+  vars:
+    ansible_user_id: hisamatsuyoshiyuki
+    ansible_user_gid: 20
+
+    homebrew_cask_apps:
+      - atok
+      - discord
+      - google-chrome
+      - iterm2
+      - logi-options-plus
+      - microsoft-office
+      - miro
+      - mysqlworkbench
+      - neat
+      - notion
+      - scroll-reverser
+      - slack
+      - visual-studio-code
+      - zoom
+
+    homebrew_installed_packages:
+      - coreutils
+      - gh
+      - gsed
+      - hadolint
+      - jq
+      - speedtest-cli
+      - tmux
+      - vim
+      - zsh
+
+    mas_installed_apps:
+      - { name: "Bitwarden", id: 1352778147 }
+      - { name: "Display Menu", id: 549083868 }
+      - { name: "Keynote", id: 409183694 }
+
+    dockitems_persist:
+      - name: Slack
+        path: "/Applications/Slack.app/"
+        pos: 1
+      - name: Discord
+        path: "/Applications/Discord.app/"
+        pos: 2
+      - name: Google Chrome
+        path: "/Applications/Google Chrome.app/"
+        pos: 3
+      - name: Visual Studio Code
+        path: "/Applications/Visual Studio Code.app/"
+        pos: 4
+      - name: iTerm
+        path: "/Applications/iTerm.app/"
+        pos: 5
+      - name: システム設定
+        path: "/Applications/System Preferences.app/"
+        pos: 6
+      - name: 計算機
+        path: "/Applications/Calculator.app/"
+        pos: 7
+      - name: アクティビティモニタ
+        path: "/Applications/Utilities/Activity Monitor.app/"
+        pos: 8
+      - name: スクリーンショット
+        path: "/Applications/Utilities/Screenshot.app/"
+        pos: 9
+      - name: Notion
+        path: "/Applications/Notion.app/"
+        pos: 10
+      - name: Logi Options+
+        path: "/Applications/logioptionsplus.app/"
+        pos: 11
+      - name: MySQLWorkbench
+        path: "/Applications/MySQLWorkbench.app/"
+        pos: 12
+      - name: Docker Desktop
+        path: "/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/"
+        pos: 13
+      - name: Mission Control
+        path: "/Applications/Mission Control.app/"
+        pos: 14
+      - name: Launchpad
+        path: "/Applications/Launchpad.app/"
+        pos: 15
+
+    dotfiles_repo: "git@github.com:karia/dot-files.git"
+    dotfiles_repo_version: master
+    dotfiles_repo_local_destination: "~/projects/karia/dot-files"
+    dotfiles_files:
+      - .asdfrc
+      - .gitconfig
+      - .gitignore_global
+      - .tmux.conf
+      - .tool-versions
+      - .vimrc
+      - .zshrc
+
+  roles:
+    - role: geerlingguy.mac.homebrew
+      tags: homebrew
+    - role: geerlingguy.mac.mas
+      tags: mas
+    - role: geerlingguy.mac.dock
+      tags: dock
+    - role: geerlingguy.dotfiles
+      tags: dotfiles

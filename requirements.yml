@@ -1,0 +1,7 @@
+---
+roles:
+- name: geerlingguy.dotfiles
+
+collections:
+- name: geerlingguy.mac
+- name: osx_provisioner.collection
