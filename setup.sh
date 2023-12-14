@@ -8,12 +8,12 @@ install Homebrew & ansbile
 ------------------------------------------------------------
 EOS
 
-if !(type "brew" > /dev/null 2>&1); then
+if ! (type "brew" > /dev/null 2>&1); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+  echo "eval \"\$(/opt/homebrew/bin/brew shellenv)\"" >> ~/.zprofile
 fi
 
-if !(type "ansible" > /dev/null 2>&1); then
+if ! (type "ansible" > /dev/null 2>&1); then
   brew install ansible
 fi
 
