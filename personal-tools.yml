@@ -7,6 +7,8 @@
     ansible_user_id: hisamatsuyoshiyuki
     ansible_user_gid: 20
 
+    homebrew_taps: []
+
     homebrew_cask_apps:
       - atok
       - discord
