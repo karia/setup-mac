@@ -7,7 +7,8 @@
     ansible_user_id: hisamatsuyoshiyuki
     ansible_user_gid: 20
 
-    homebrew_taps: []
+    homebrew_taps: 
+      - mackerelio/mackerel-agent
 
     homebrew_cask_apps:
       - atok
@@ -32,6 +33,7 @@
       - gsed
       - hadolint
       - jq
+      - mkr
       - speedtest-cli
       - tmux
       - vim
