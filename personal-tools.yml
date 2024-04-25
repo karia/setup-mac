@@ -9,6 +9,7 @@
 
     homebrew_taps: 
       - mackerelio/mackerel-agent
+      - kayac/tap
 
     homebrew_cask_apps:
       - atok
@@ -29,10 +30,12 @@
 
     homebrew_installed_packages:
       - coreutils
+      - ecspresso
       - gh
       - gsed
       - hadolint
       - jq
+      - jsonnet
       - mkr
       - speedtest-cli
       - tmux
