@@ -10,6 +10,7 @@
     homebrew_taps: 
       - mackerelio/mackerel-agent
       - kayac/tap
+      - Songmu/tap
 
     homebrew_cask_apps:
       - atok
@@ -30,6 +31,7 @@
 
     homebrew_installed_packages:
       - coreutils
+      - ecschedule
       - ecspresso
       - gh
       - gsed
