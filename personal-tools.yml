@@ -30,6 +30,7 @@
       - zoom
 
     homebrew_installed_packages:
+      - awscli
       - coreutils
       - ecschedule
       - ecspresso
