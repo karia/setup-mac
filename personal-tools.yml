@@ -24,8 +24,10 @@
       - mysqlworkbench
       - neat
       - notion
+      - session-manager-plugin
       - scroll-reverser
       - slack
+      - tableplus
       - visual-studio-code
       - zoom
 
@@ -41,7 +43,10 @@
       - jq
       - jsonnet
       - mkr
+      - sheldon
       - speedtest-cli
+      - terraform
+      - tflint
       - tmux
       - vim
       - zsh
@@ -56,6 +61,7 @@
     dotfiles_repo_local_destination: "~/projects/karia/dot-files"
     dotfiles_files:
       - .asdfrc
+      - .config
       - .gitconfig
       - .gitignore_global
       - .tmux.conf
