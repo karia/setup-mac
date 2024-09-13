@@ -32,6 +32,7 @@
       - zoom
 
     homebrew_installed_packages:
+      - actionlint
       - asdf
       - awscli
       - coreutils
@@ -43,10 +44,13 @@
       - jq
       - jsonnet
       - mkr
+      - pinact
+      - pre-commit
       - sheldon
       - speedtest-cli
       - terraform
       - tflint
+      - triby
       - tmux
       - vim
       - zsh
