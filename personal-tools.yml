@@ -49,7 +49,7 @@
       - speedtest-cli
       - terraform
       - tflint
-      - triby
+      - trivy
       - tmux
       - vim
       - zsh
