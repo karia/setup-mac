@@ -42,6 +42,7 @@
       - gh
       - gsed
       - hadolint
+      - jnv
       - jq
       - jsonnet
       - mkr
