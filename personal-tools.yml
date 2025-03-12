@@ -40,6 +40,7 @@
       - ecschedule
       - ecspresso
       - gh
+      - ghalint
       - gsed
       - hadolint
       - jnv
@@ -55,6 +56,7 @@
       - trivy
       - tmux
       - vim
+      - yamlfmt
       - zsh
 
     mas_installed_apps:
