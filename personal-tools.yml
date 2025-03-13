@@ -34,7 +34,6 @@
 
     homebrew_installed_packages:
       - actionlint
-      - asdf
       - awscli
       - coreutils
       - ecschedule
@@ -46,6 +45,7 @@
       - jnv
       - jq
       - jsonnet
+      - mise
       - mkr
       - pinact
       - pre-commit
@@ -68,7 +68,6 @@
     dotfiles_repo_version: master
     dotfiles_repo_local_destination: "~/projects/karia/dot-files"
     dotfiles_files:
-      - .asdfrc
       - .config
       - .gitconfig
       - .gitignore_global
