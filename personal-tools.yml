@@ -25,34 +25,48 @@
       - miro
       - neat
       - notion
+      - raycast
       - session-manager-plugin
       - scroll-reverser
       - slack
       - tableplus
       - visual-studio-code
+      - warp
       - zoom
 
     homebrew_installed_packages:
       - actionlint
       - awscli
+      - cloc
+      - container-structure-test
       - coreutils
       - ecschedule
       - ecspresso
+      - fzf
       - gh
       - ghalint
-      - gsed
+      - ghq
+      - git
+      - gnu-sed
+      - go
       - hadolint
       - jnv
       - jq
       - jsonnet
+      - lambroll
       - mise
       - mkr
       - pinact
       - pre-commit
+      - renovate
+      - ruff
       - sheldon
+      - shellcheck
       - speedtest-cli
+      - sqlfluff
       - terraform
       - tflint
+      - tracer
       - trivy
       - tmux
       - vim
