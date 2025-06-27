@@ -88,7 +88,6 @@
       - .gitconfig-work
       - .gitignore_global
       - .tmux.conf
-      - .tool-versions
       - .vimrc
       - .zshrc
 
