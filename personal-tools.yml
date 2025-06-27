@@ -68,7 +68,7 @@
     dotfiles_repo_version: master
     dotfiles_repo_local_destination: "~/projects/karia/dot-files"
     dotfiles_files:
-      - .claude/settings.json
+      - .claude
       - .config
       - .gitconfig
       - .gitconfig-work
