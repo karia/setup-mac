@@ -80,7 +80,7 @@
 
     dotfiles_repo: "git@github.com:karia/dot-files.git"
     dotfiles_repo_version: master
-    dotfiles_repo_local_destination: "~/projects/karia/dot-files"
+    dotfiles_repo_local_destination: "~/ghq/github.com/karia/dot-files"
     dotfiles_files:
       - .claude
       - .config
