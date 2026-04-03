@@ -34,7 +34,6 @@
       - .claude
       - .config
       - .gitconfig
-      - .gitconfig-work
       - .gitignore_global
       - .tmux.conf
       - .vimrc
