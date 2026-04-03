@@ -1,82 +1,31 @@
 - hosts: localhost
   connection: local
-  become_user: hisamatsuyoshiyuki
+  become_user: yoshiyuki_hisamatsu
   gather_facts: yes
 
+  vars_files:
+    - vars/common.yml
+
   vars:
-    ansible_user_id: hisamatsuyoshiyuki
-    ansible_user_gid: 20
-
-    homebrew_taps: 
-      - mackerelio/mackerel-agent
-      - kayac/tap
-      - Songmu/tap
-
     homebrew_cask_apps:
-      - atok
-      - discord
-      - docker
-      - google-chrome
-      - google-cloud-sdk
-      - iterm2
-      - jordanbaird-ice
-      - logi-options-plus
-      - microsoft-office
-      - miro
       - neat
-      - notion
       - raycast
-      - session-manager-plugin
-      - scroll-reverser
-      - slack
-      - tableplus
-      - visual-studio-code
-      - warp
-      - zoom
 
     homebrew_installed_packages:
-      - actionlint
-      - awscli
-      - cloc
-      - container-structure-test
-      - coreutils
-      - ecschedule
-      - ecspresso
       - fzf
       - gh
-      - ghalint
       - ghq
       - git
       - gnu-sed
-      - go
-      - hadolint
+      - grep
       - jnv
       - jq
-      - jsonnet
-      - lambroll
       - mise
-      - mkr
-      - pinact
-      - pre-commit
-      - renovate
-      - ruff
       - sheldon
-      - shellcheck
       - speedtest-cli
-      - sqlfluff
-      - terraform
-      - tflint
-      - tracer
-      - trivy
       - tmux
       - vim
-      - yamlfmt
       - zsh
-
-    mas_installed_apps:
-      - { name: "Bitwarden", id: 1352778147 }
-      - { name: "Display Menu", id: 549083868 }
-      - { name: "Keynote", id: 409183694 }
 
     dotfiles_repo: "git@github.com:karia/dot-files.git"
     dotfiles_repo_version: master
@@ -85,7 +34,6 @@
       - .claude
       - .config
       - .gitconfig
-      - .gitconfig-work
       - .gitignore_global
       - .tmux.conf
       - .vimrc
@@ -94,7 +42,5 @@
   roles:
     - role: geerlingguy.mac.homebrew
       tags: homebrew
-    - role: geerlingguy.mac.mas
-      tags: mas
     - role: geerlingguy.dotfiles
       tags: dotfiles

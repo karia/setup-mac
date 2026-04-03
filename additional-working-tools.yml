@@ -1,0 +1,15 @@
+- hosts: localhost
+  connection: local
+  become_user: yoshiyuki_hisamatsu
+  gather_facts: yes
+
+  vars_files:
+    - vars/common.yml
+
+  vars:
+    homebrew_cask_apps:
+      - cursor
+
+  roles:
+    - role: geerlingguy.mac.homebrew
+      tags: homebrew

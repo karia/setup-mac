@@ -39,6 +39,14 @@ ansible-playbook -i localhost -c local personal-tools.yml
 
 cat <<EOS
 ------------------------------------------------------------
+install additional working tools
+------------------------------------------------------------
+EOS
+
+ansible-playbook -i localhost -c local additional-working-tools.yml
+
+cat <<EOS
+------------------------------------------------------------
 setup completed!!
 ------------------------------------------------------------
 EOS
