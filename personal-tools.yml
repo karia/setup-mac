@@ -1,10 +1,10 @@
 - hosts: localhost
   connection: local
-  become_user: hisamatsuyoshiyuki
+  become_user: yoshiyuki_hisamatsu
   gather_facts: yes
 
   vars:
-    ansible_user_id: hisamatsuyoshiyuki
+    ansible_user_id: yoshiyuki_hisamatsu
     ansible_user_gid: 20
 
     homebrew_taps: 
