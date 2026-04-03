@@ -17,6 +17,7 @@
       - ghq
       - git
       - gnu-sed
+      - grep
       - jnv
       - jq
       - mise
