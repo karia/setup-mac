@@ -8,9 +8,12 @@
 
   vars:
     homebrew_cask_apps:
+      - claude
       - cmux
       - drawio
+      - obsidian
       - raycast
+      - slack
 
     homebrew_installed_packages:
       - fzf
