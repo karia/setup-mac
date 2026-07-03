@@ -8,7 +8,7 @@
 
   vars:
     homebrew_cask_apps:
-      - neat
+      - drawio
       - raycast
 
     homebrew_installed_packages:
@@ -21,6 +21,7 @@
       - jnv
       - jq
       - mise
+      - pstree
       - sheldon
       - speedtest-cli
       - tmux
