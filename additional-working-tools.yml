@@ -9,6 +9,9 @@
   vars:
     homebrew_cask_apps:
       - cursor
+      - figma
+      - microsoft-teams
+      - zoom
 
   roles:
     - role: geerlingguy.mac.homebrew
