@@ -8,7 +8,6 @@
 
   vars:
     homebrew_cask_apps:
-      - neat
       - raycast
 
     homebrew_installed_packages:
