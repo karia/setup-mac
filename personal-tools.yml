@@ -21,6 +21,7 @@
       - jnv
       - jq
       - mise
+      - pstree
       - sheldon
       - speedtest-cli
       - tmux
